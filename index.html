@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <title>CADES Quest</title>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+
+</head>
+
+<body>
+
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbxToGtI-2mhwXnrpf1YPCtxR7KqkbY342EOz4p7s6g4RNrqhtp2EHPtagaIdIV0ku4pEw/exec"
+    width="100%"
+    height="100%"
+    allowfullscreen="true"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+  </iframe>
+
+  <script>
+    window.onload = function() {
+      document.querySelector('iframe')
+        .requestFullscreen()
+        .catch((err) => {
+          console.error(
+            'Error attempting to enable full-screen mode:',
+            err.message
+          );
+        });
+    };
+  </script>
+
+</body>
+</html>
